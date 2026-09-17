@@ -82,7 +82,7 @@ export const DescuentoSchema = z.object({
   tipo: z.enum(["Cantidad", "Monto"]),
   porcentaje: z.number().min(0).max(100),
   descripcion: z.string().min(5).max(255).optional(),
-  fechaExpiracion: datetime.optional(), // ISO date string
+  fechaExpiracion: datetime.optional(),
 });
 
 export const FavoritoSchema = z.object({
